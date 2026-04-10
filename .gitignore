@@ -23,6 +23,9 @@ obj/
 *.sln.docstates
 .vs/
 
+# ===== Local app config (do not commit) =====
+backend/Vibecoding.Api/appsettings.Development.json
+
 # ===== Logs =====
 *.log
 
