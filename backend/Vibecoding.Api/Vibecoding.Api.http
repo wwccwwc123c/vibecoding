@@ -1,0 +1,6 @@
+@Vibecoding.Api_HostAddress = http://localhost:5231
+
+GET {{Vibecoding.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

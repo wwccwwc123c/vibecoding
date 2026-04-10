@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibecoding Todo</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Todo 管理</h1>
+
+    <form id="createForm" class="create-row">
+      <input id="titleInput" type="text" maxlength="100" placeholder="输入待办内容..." />
+      <label class="inline-check">
+        <input id="isDoneInput" type="checkbox" />
+        已完成
+      </label>
+      <button type="submit">新增</button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <div class="toolbar">
+      <button id="refreshBtn" type="button">刷新</button>
+    </div>
+
+    <ul id="todoList" class="todo-list"></ul>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
