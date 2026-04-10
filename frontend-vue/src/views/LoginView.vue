@@ -21,7 +21,7 @@ async function submit() {
   const name = userName.value.trim()
   if (!name || !password.value) {
     ElMessage.warning('请输入用户名和密码')
-    return
+    return 
   }
   if (password.value.length < 6) {
     ElMessage.warning('密码至少 6 位')
@@ -186,7 +186,7 @@ onUnmounted(() => {
             type="password"
             show-password
             autocomplete="current-password"
-            placeholder="输入密码"
+            placeholder="输入密码" 
             @keyup.enter="submit"
           >
             <template #prefix>
@@ -211,7 +211,7 @@ onUnmounted(() => {
         </div>
         <div class="action-row">
           <el-button class="switch-btn" link type="primary" @click="toggleMode">
-            {{ isRegister ? '已有账号？去登录' : '没有账号？去注册' }}
+            {{ isRegister ? '已有账号111？去登录' : '没有账号？去注册' }}
           </el-button>
           <button class="ghost-link" type="button">忘记密码？</button>
         </div>
